@@ -11,10 +11,8 @@ class TweetWall extends React.Component {
   }
 
   componentWillMount() {
-    setState({
-      tweets: this.props.newTweets
-    })
-  }
+     this.setState({ tweets: this.props.newTweets});
+   }
 
   shouldComponentUpdate(nextProps, nextState){
      return (nextProps.newTweets.length > "nil")
