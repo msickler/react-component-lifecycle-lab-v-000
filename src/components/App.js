@@ -24,7 +24,7 @@ class App extends React.Component {
   componentWillUnmount() {
     this.cleanUpInterval()
   }
-  
+
 
   startInterval = () => {
     this.interval = setInterval(this.fetchTweets, 2000);
